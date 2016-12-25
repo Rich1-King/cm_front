@@ -28,6 +28,7 @@ function controller($state,$http) {
         }
     }
     vm.shutDownLogin = function(){
+        console.log('进入shutDownLogin');
         vm.loginFlag = false;
         vm.filter_class = null;
     }
