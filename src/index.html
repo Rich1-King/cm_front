@@ -1,0 +1,38 @@
+<html ng-app="app" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manager For Me</title>
+<!-- bower:css -->
+         <link rel="stylesheet" href="lib/angular-ui-notification/dist/angular-ui-notification.css">
+         <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+         <!-- endinject -->
+         <link rel="stylesheet" href="resources/css/login/login.css">
+         <link rel="stylesheet" href="resources/css/component/main.css">
+         <style type="text/css">
+            .icon {
+                width: 1em; height: 1em;
+                vertical-align: -0.15em;
+                fill: currentColor;
+                overflow: hidden;
+            }
+          </style>
+    </head>
+    <body>
+        <div ui-view style="height: 100%;width: 100%;text-align: center"></div>
+        <!-- bower:js -->
+        <script src="lib/jquery/dist/jquery.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="lib/angular-ui-notification/dist/angular-ui-notification.js"></script>
+        <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+        <!-- endinject -->
+
+        <script src="resources/js/app.js"></script>
+        <script src="resources/js/routers/default.router.js"></script>
+        <script src="resources/js/controllers/login.controller.js"></script>
+        <script src="resources/js/controllers/main.controller.js"></script>
+        <!--font-->
+        <script src="resources/js/font/iconfont.js"></script>
+    </body>
+</html>

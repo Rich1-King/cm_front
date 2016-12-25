@@ -1,0 +1,25 @@
+<div ng-style="vm.filter_class" style="width: 100%;height: 100%;position: absolute;overflow-y: visible">
+    <div id="login_header">
+        <div class="login_but" style="float: right; margin-top: 12px">regisn</div>
+        <div class="login_but" style="float: right; margin-top: 12px; margin-right: 5px; align-content: center" ng-click="vm.showLogin()">login</div>
+    </div>
+    <div id="login_content"></div>
+    <div id="login_font" style="text-align: center">
+        <span>版权所有＠</span>
+    </div>
+</div>
+<div id="login_template" ng-show="vm.loginFlag">
+    <div id="login_div_bg" class="login_div" style="background-color: #ffffff; opacity: 0.2;"></div>
+    <div id="login_div" class="login_div">
+        <svg id="shutdown_div" ng-click="vm.shutDownLogin()" class="icon" aria-hidden="true" style="color: gray; width: 32px; height: 32px;position: absolute; top: 2px; right: 2px">
+            <use xlink:href="#icon-guanbi2"></use>
+        </svg>
+        <input class="login_content" style="color:white; padding-left: 10px" id="account" type="text" placeholder="please input account"/>
+        <input class="login_content" style="color:white; padding-left: 10px" id="password" type="text" placeholder="please input password"/>
+        <div class="login_content" style="border: 0px; background-color: transparent; margin-left:auto; margin-right:auto; padding: 0px">
+            <input placeholder="captcha" style="color:white; background-color: transparent; padding-left: 10px; border-radius: 0px; border: 1px solid rgba( 255, 255, 255, 0.3); position: relative; float: left; width: 100px; height: 35px;"/>
+            <img ng-click="vm.changeCaptcha()" ondragstart="return false;" src="data:image/png;base64,{{vm.captacha.data.base64_image}}" style="float:right; width:100px; height: 35px; margin-right: 5px"/>
+        </div>
+        <button class="login_content" style="border:0px; background-color: #2e8a57; width: 220px; height: 40px; color:white" ng-click="vm.showLogin();vm.go()">login</button>
+    </div>
+</div>

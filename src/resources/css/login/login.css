@@ -1,0 +1,75 @@
+
+#login_header{
+    position: absolute;
+    background-color: ghostwhite;
+    width: 100%;
+    height: 50px;
+}
+
+.login_div{
+    position: fixed;
+    width: 350px;
+    height: 300px;
+    background-color: transparent;
+    left: 35%;
+    top: 25%;/*
+    box-shadow: wheat 0px 0px 5px; */
+   /* border-radius: 5px;*/
+}
+.login_content{
+    position: relative;
+    width: 220px;
+    height: 40px;
+    top: 15%;
+    margin-top: 10px;
+    border-radius: 0px;
+    border: 1px solid rgba( 255, 255, 255, 0.3);
+    background-color: transparent;
+}
+.login_content::-moz-placeholder{
+    color: #cacaca;
+}
+::-moz-placeholder{
+    color: #cacaca;
+}
+.login_but{
+    margin-top: 5px;
+    margin-right: 8px;
+    width: 55px;
+    height: 20px;
+    cursor: pointer;
+    color: #2e6da4;
+    text-align: center;
+}
+#login_font{
+    height: 105px;
+    margin-bottom: 0px;
+    background-color: black;
+    line-height: -moz-block-height;
+    color: white;
+}
+#login_content{
+    width: 100%;
+    min-height: 640px;
+    background-image: url("../../images/main_background.jpg");
+    background-color: #95d2b0;
+    background-origin: 0;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-repeat: no-repeat
+}
+#shutdown_div:hover{
+    fill: white;
+    animation: shutdown_rotate 2s linear infinite;
+    -moz-animation: shutdown_rotate 2s linear infinite
+}
+#shutdown_div::visited{
+    fill: gray;
+}
+#shutdown_div:active{
+    fill: red;
+}
+@keyframes shutdown_rotate{
+    from{ transform: rotate(0deg)}
+    to{ transform: rotate(360deg) }
+}

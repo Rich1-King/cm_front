@@ -1,0 +1,20 @@
+#header{
+    height: 8%;
+    background-color: ghostwhite;
+}
+#left{
+    height: 92%;
+    width: 15%;
+    background-color: black;
+    position: absolute;
+    top: 8%;
+}
+#right{
+    height: 92%;
+    width: 85%;
+    float: right;
+    background-color: white;
+    position: absolute;
+    top: 8%;
+    left: 15%;
+}
