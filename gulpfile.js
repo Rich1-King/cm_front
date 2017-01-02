@@ -49,7 +49,7 @@ var srcPath = {
     ],
     html: ['src/index-origin.html'],
     template: ['src/templates/**/*.html', 'src/resources/js/component/**/*.html'],
-    images: ['src/resources/img/**/*'],
+    images: ['src/resources/img/*.*'],
     favicon: ['src/favicon.ico'],
     temporary: ['src/sample/**/*.json'],
     output: ['build/'],

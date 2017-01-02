@@ -1,9 +1,12 @@
 /**
  * Created by rich1 on 11/8/16.
  */
+(function () {
+  "use strict";
 angular.module('app.controllers').controller('loginCtrl',controller);
 
 function controller($state,$http) {
+    console.log('loginCtrl');
     var vm = this;
     vm.filter_class=null;
     vm.loginFlag = false;
@@ -43,3 +46,4 @@ function controller($state,$http) {
             })
     }
 }
+})();

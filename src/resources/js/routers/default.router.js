@@ -1,7 +1,7 @@
 /**
  * Created by rich1 on 10/30/16.
  */
-
+(function(){
 angular.module('app').config(defaultRouter);
 
 function defaultRouter($stateProvider, $urlRouterProvider) {
@@ -18,3 +18,4 @@ function defaultRouter($stateProvider, $urlRouterProvider) {
         });
 
 }
+})();
