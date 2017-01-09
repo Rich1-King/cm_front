@@ -1,20 +1,48 @@
 #header{
-    height: 8%;
+    height: 50px;
+    width: 100%;
     background-color: ghostwhite;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    z-index: 11;
+    text-align: center;
+    line-height: 50px;
 }
 #left{
-    height: 92%;
-    width: 15%;
+    height: 100%;
+    width: 150px;
     background-color: black;
+    position: fixed;
+    padding-top: 50px;
+    z-index: 10;
+}
+#left ul{
+    width: 150px;
+    height: 100%;
+    list-style: none;
     position: absolute;
-    top: 8%;
+    margin: 0px;
+    padding: 0px;
+}
+#left ul li{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+}
+
+#left ul li:hover{
+    background: gray;
+    color: lightgray;
+}
+
+#left ul li:active{
+    background: lightgray;
+    color: gray;
 }
 #right{
-    height: 92%;
-    width: 85%;
-    float: right;
-    background-color: white;
-    position: absolute;
-    top: 8%;
-    left: 15%;
+    margin-left: 150px;
+    z-index: 9;
 }

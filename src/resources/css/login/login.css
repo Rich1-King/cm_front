@@ -20,7 +20,7 @@
     position: relative;
     width: 220px;
     height: 40px;
-    top: 15%;
+    top: 45px;
     margin-top: 10px;
     border-radius: 0px;
     border: 1px solid rgba( 255, 255, 255, 0.3);
@@ -50,7 +50,7 @@
 }
 #login_content{
     width: 100%;
-    min-height: 640px;
+    min-height: 100%;
     background-image: url("/resources/img/main_background.jpg");
     background-color: #95d2b0;
     background-origin: 0;
@@ -63,7 +63,7 @@
     animation: shutdown_rotate 2s linear infinite;
     -moz-animation: shutdown_rotate 2s linear infinite
 }
-#shutdown_div::visited{
+#shutdown_div:visited{
     fill: gray;
 }
 #shutdown_div:active{

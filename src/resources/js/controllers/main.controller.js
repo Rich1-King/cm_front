@@ -5,8 +5,10 @@
   "use strict";
 angular.module('app.controllers').controller('mainCtrl', controller);
 
-function controller() {
+function controller($state) {
     var vm = this;
-
+    /*vm.my = function(){
+      $state.go('.my');
+    }*/
 }
 })();
