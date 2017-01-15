@@ -37,7 +37,7 @@ function controller($state,$http) {
     }
     vm.go = function () {
         console.log('go into main.html');
-        $state.go('main');
+        $state.go('main.my');
     }
     vm.changeCaptcha = function(){
         $http.get('/cm_api/login/captacha').success(function(response){

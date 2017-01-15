@@ -11,14 +11,14 @@
 }
 #left{
     height: 100%;
-    width: 150px;
+    width: 200px;
     background-color: black;
     position: fixed;
     padding-top: 50px;
     z-index: 10;
 }
 #left ul{
-    width: 150px;
+    width: 200px;
     height: 100%;
     list-style: none;
     position: absolute;
@@ -26,7 +26,7 @@
     padding: 0px;
 }
 #left ul li{
-    width: 150px;
+    width: 200px;
     height: 40px;
     text-align: center;
     line-height: 40px;
@@ -43,6 +43,6 @@
     color: gray;
 }
 #right{
-    margin-left: 150px;
+    margin-left: 200px;
     z-index: 9;
 }
