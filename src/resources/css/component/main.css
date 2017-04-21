@@ -46,3 +46,10 @@
     margin-left: 200px;
     z-index: 9;
 }
+
+#bgavatar{
+    background: green;
+    filter: blur(2px);
+    -moz-filter: blur(2px);
+    opacity: 0.3;
+}

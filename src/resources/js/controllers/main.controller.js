@@ -10,5 +10,15 @@ function controller($state) {
     /*vm.my = function(){
       $state.go('.my');
     }*/
+
+    vm.avatar_show = function(){
+      var avatar = document.getElementById('avatar');
+      avatar.style.visibility = 'visible';
+    }
+
+    vm.avatar_hidden = function(){
+      var avatar = document.getElementById('avatar');
+      avatar.style.visibility = 'hidden';
+    }
 }
 })();
