@@ -34,5 +34,11 @@ function controller($state) {
       }
     
     }
+    vm.mouse_enter = function(event){
+      $(event.currentTarget).children()[0].style.display="block";
+    }
+    vm.mouse_leave = function(event){
+      $(event.currentTarget).children()[0].style.display="none";
+    }
 }
 })();
