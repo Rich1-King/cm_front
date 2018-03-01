@@ -14,9 +14,22 @@
             </div>
         </div>
     </div>
-    <div id="left">
-        <ul>
-            <li ui-sref=".my" style="margin-top: 30px">个人简介</li>
+    <div id="left" style="background-color: 333333">
+        <ul style="position:relative">
+            <li id="id1" ui-sref=".my" style="margin-top: 30px;" ng-click="vm.move_down()">
+                <div id="div1" style="height: 40px; position:relative">
+                    个人简介    
+                    <img style="position:absolute; top:8px; right: 20px; height: 24px" src="resources/img/you.png"/>
+                    <ul style="background-color:666666; height: auto; display:none">
+                        <li>
+                            1
+                        </li>
+                        <li>
+                            2
+                        </li>
+                    </ul>
+                </div>
+            </li>
             <li ui-sref=".bar">BarChart</li>
             <li>everyone</li>
             <li>body</li>
