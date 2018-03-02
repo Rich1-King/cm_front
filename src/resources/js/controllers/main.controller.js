@@ -27,7 +27,7 @@ function controller($state) {
       if(0 == id1.style.marginBottom || "0px" == id1.style.marginBottom || "undefine" == id1.style.marginBottom){
         id1.style.marginBottom = div1.getElementsByTagName("ul")[0].offsetHeight;
         div1.getElementsByTagName("img")[0].src="resources/img/xia.jpg";
-        id1.style.transition = "margin-bottom 1s linear";
+        id1.style.transition = "margin-bottom 0.3s linear";
         div1.getElementsByTagName("ul")[0].style.opacity = 1;
         div1.getElementsByTagName("ul")[0].style.transition = "all 1s linear";
       }else{
@@ -35,7 +35,7 @@ function controller($state) {
         div1.getElementsByTagName("img")[0].src="resources/img/you.png";
         id1.style.transition = "margin-bottom 1s linear";
         div1.getElementsByTagName("ul")[0].style.opacity = 0;
-        div1.getElementsByTagName("ul")[0].style.transition = "all 1s linear";
+        div1.getElementsByTagName("ul")[0].style.transition = "all 0.4s linear";
 
       }
     }
