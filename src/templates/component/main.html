@@ -15,32 +15,55 @@
         </div>
     </div>
     <div id="left">
-        <ul style="position:relative">
-            <li id="id1" ui-sref=".my" style="margin-top: 30px;" ng-click="vm.move_down()" ng-mouseenter="vm.mouse_enter($event)" ng-mouseleave="vm.mouse_leave($event)">
+        <ul style="position:relative;">
+            <li id="id1" ui-sref=".my" style="position:relative;margin-top: 30px;" ng-mouseenter="vm.mouse_enter($event)" ng-mouseleave="vm.mouse_leave($event)">
                 <div style="display:none;float:left; background-color:#ffffff; width:4px; height: 40px"></div>
-                <div id="div1" style="height: 40px; position:relative">
-                    个人简介    
-                    <img style="position:absolute; top:8px; right: 20px; height: 24px" src="resources/img/you.png"/>
-                    <ul style="background-color:#1a2f46; height: auto; display:none">
-                        <li ng-mouseenter="vm.mouse_enter($event)" ng-mouseleave="vm.mouse_leave($event)">
-                                <div style="display:none;float:left; background-color:#ffffff; width:4px; height: 40px"></div>
-                            1
+                <div id="div1" style="height: 40px; position:relative;">
+                    <div style="height: 40px; position:relative;" ng-click="vm.move_down()">
+                        <span style="position:absolute; left:34px" >
+                            个人简介    
+                        </span>
+                        <img style="position:absolute; top:8px; right: 20px; height: 24px" src="resources/img/you.png"/>
+                    </div>
+                    <ul style="background-color:#1a2f46; height: auto; opacity:0">
+                        <li style="position:relative" ng-click="console.log('haha');" ng-mouseenter="vm.mouse_enter($event)" ng-mouseleave="vm.mouse_leave($event)">
+                            <div style="display:none;position:absolute; top:13px; left:34px; background-color:#ffffff; width:4px; height: 16px"></div>
+                            <span style="position:absolute; left:54px;">
+                                1
+                            </span>
                         </li>
-                        <li ng-mouseenter="vm.mouse_enter($event)" ng-mouseleave="vm.mouse_leave($event)">
-                                <div style="display:none;float:left; background-color:#ffffff; width:4px; height: 40px"></div>
-                            2
+                        <li style="position:relative" ng-mouseenter="vm.mouse_enter($event)" ng-mouseleave="vm.mouse_leave($event)">
+                            <div style="display:none; position:absolute; top:13px; left:34px; background-color:#ffffff; width:4px; height: 16px"></div>
+                            <span style="position:absolute; left:54px; ">
+                                2
+                            </span>
                         </li>
                     </ul>
                 </div>
             </li>
-            <li ui-sref=".bar" ng-mouseenter="vm.mouse_enter($event)" ng-mouseleave="vm.mouse_leave($event)">BarChart
-                    <div style="display:none;float:left; background-color:#ffffff; width:4px; height: 40px"></div>
+            <li style="position:relative" ui-sref=".bar" ng-mouseenter="vm.mouse_enter($event)" ng-mouseleave="vm.mouse_leave($event)">
+                <div style="display:none;float:left; background-color:#ffffff; width:4px; height: 40px"></div>
+                <div style="height: 40px; position:relative;">
+                    <span style="position:absolute; left:34px" >
+                        BarChart
+                    </span>
+                </div>
             </li>
-            <li ng-mouseenter="vm.mouse_enter($event)" ng-mouseleave="vm.mouse_leave($event)"> everyone
-                    <div style="display:none;float:left; background-color:#ffffff; width:4px; height: 40px"></div>
+            <li style="position:relative" ng-mouseenter="vm.mouse_enter($event)" ng-mouseleave="vm.mouse_leave($event)"> 
+                <div style="display:none;float:left; background-color:#ffffff; width:4px; height: 40px"></div>
+                <div style="height: 40px; position:relative;">
+                    <span style="position:absolute; left:34px" >
+                        everyone
+                    </span>
+                </div>
             </li>
-            <li ng-mouseenter="vm.mouse_enter($event)" ng-mouseleave="vm.mouse_leave($event)">body
-                    <div style="display:none;float:left; background-color:#ffffff; width:4px; height: 40px"></div>
+            <li style="position:relative" ng-mouseenter="vm.mouse_enter($event)" ng-mouseleave="vm.mouse_leave($event)">
+                <div style="display:none;float:left; background-color:#ffffff; width:4px; height: 40px"></div>
+                <div style="height: 40px; position:relative;">
+                    <span style="position:absolute; left:34px" >
+                            body
+                    </span>
+                </div>    
             </li>
         </ul>
     </div>
