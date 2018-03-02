@@ -35,7 +35,7 @@ function controller($state) {
         div1.getElementsByTagName("img")[0].src="resources/img/you.png";
         id1.style.transition = "margin-bottom 1s linear";
         div1.getElementsByTagName("ul")[0].style.opacity = 0;
-        div1.getElementsByTagName("ul")[0].style.transition = "all 0.4s linear";
+        div1.getElementsByTagName("ul")[0].style.transition = "all 0.7s linear";
 
       }
     }
